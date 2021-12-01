@@ -28,7 +28,7 @@ for i in 1 .. measurements.high:
 
     if s > last:
         increases += 1
-    
+
     last = s
 
 echo increases
