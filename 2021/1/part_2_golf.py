@@ -1,0 +1,1 @@
+print(len([x for i, x in enumerate([int(l) for l in open("input.txt", "r").readlines() if l != "\n"], start=1) if x > ([99**9] + [int(l) for l in open("input.txt", "r").readlines() if l != "\n"])[i-1]]))
