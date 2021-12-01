@@ -13,4 +13,3 @@ for m in measurements[1:]:
     last = m
 
 print(increases)
-
