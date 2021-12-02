@@ -18,5 +18,5 @@ for l in lines:
             aim -= v
         else:
             raise ValueError(l)
-print(h,d)
+
 print(h*d)
