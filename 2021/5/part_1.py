@@ -1,5 +1,3 @@
-from dataclasses import dataclass
-
 with open("input.txt", "r") as f:
     f_lines = [l.rstrip("\n") for l in f.readlines()]
 
