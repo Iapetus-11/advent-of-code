@@ -64,7 +64,7 @@ for c in balls:
             for j in 0..4:
                 if b.a[i][j] == c:
                     b.m[i][j] = true
-                
+
                 if isBingo(b):
                     echo sumMapInt(getUnmarked(b)), " ", c
                     echo sumMapInt(getUnmarked(b)) * c.parseInt
