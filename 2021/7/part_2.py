@@ -5,14 +5,14 @@ positions =[*map(int, lines[0].split(","))]
 p_min = min(positions)
 p_max = max(positions)
 
-fuel_usages = {}
+fuel_usages = []
 
 for i in range(p_min, p_max+1):
     fuel = 0
     for p in positions:
         steps = abs(i - p)
-        fuel += (steps**2)//2+(steps-(steps//2))
+        fuel += (steps * (steps + 1)) // 2
 
-    fuel_usages[i] = fuel
+    fuel_usages.append(fuel)
 
-print(min(fuel_usages.values()))
+print(min(fuel_usages))
